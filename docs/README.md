@@ -1,4 +1,4 @@
-# Blog
+# My Blog
 
 Hello, world!
 
