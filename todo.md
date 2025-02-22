@@ -4,3 +4,4 @@
 - [ ] 记录一下Windows上Terminal的配置
   - powershell
   - Terminal
+- [ ] godot导出为web游戏并通过Cloudflare部署。
