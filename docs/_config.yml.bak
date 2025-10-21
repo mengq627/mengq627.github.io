@@ -1,0 +1,11 @@
+theme: jekyll-theme-minimal
+title: MengQ's Home
+description: Bookmark this to keep an eye on my project updates!
+navigation:
+  - title: 首页
+    url: /
+  - title: blog
+    url: /blog/
+  - title: 联系我们
+    url: /contact/
+
