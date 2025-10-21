@@ -21,3 +21,7 @@ https://zhuanlan.zhihu.com/p/1916480464497148593
 ### _config.yml 配置
 
 https://demopark.github.io/docusaurus-docs-Zh_CN/docs/guides-navigation.html
+
+
+jekyll 官方配置教程
+https://jekylldo.cn/docs/configuration/
