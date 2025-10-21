@@ -44,6 +44,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1 # 使用 `actions/jekyll-build-pages@v1` action
+                                            # 来执行 Jekyll 构建。这个 action 专门为 GitHub Pages 优化，
+                                            # 会使用与 GitHub Pages 服务器上相同的依赖项版本。
         with: # `with` 关键字用于向 action 提供输入参数
           source: ./docs            # 指定 Jekyll 站点的源文件位于仓库的根目录 (`./` 表示当前目录)。
           destination: ./_site  # 指定 Jekyll 构建后生成的静态文件存放在运行器环境中的 `_site` 目录。
