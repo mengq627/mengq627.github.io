@@ -1,5 +1,6 @@
 title: "Jekyll Actions 演示"
 description: A starter template for a Jeykll site using the Just the Docs theme!
-theme: just-the-docs
+# theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 nav_enabled: true  # 全局启用或禁用侧边栏导航
