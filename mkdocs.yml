@@ -23,13 +23,12 @@ site_description: :)
 nav:
   - 首页: index.md            # 你的项目介绍页
   - 博客与随笔: blog.md          # 之前提到的 blog 页面
-  - 菜谱大全:
+  - 菜谱大全: 
+    - 'cook/index.md' 
     # 使用 'index.md' 来作为整个 'cook' 部分的介绍页 (推荐的做法)
-    - 介绍: cook/index.md       
-    # 子页面列表
-    - 大虾炒白菜: cook/大虾炒白菜.md 
-    #- 🌶️ 麻婆豆腐: cook/ma-po-tofu.md
-  #- 关于项目: about.md
+    - 大虾炒白菜: cook/大虾炒白菜.md
+    - 葱烧豆腐: cook/葱烧豆腐.md
+    - 炝锅面: cook/炝锅面.md
 
 # ====================================================================
 # 3. 主题设置 (Theme) 配置：使用 Material for MkDocs
