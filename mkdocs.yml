@@ -38,7 +38,7 @@ nav:
 theme:
   name: material                  # 使用 Material for MkDocs 主题
   language: zh                    # 启用主题的中文本地化（搜索提示、页脚等）
-  custom_dir: overrides           # 允许你自定义主题文件（高级功能）
+  #custom_dir: overrides           # 允许你自定义主题文件（高级功能）
   features:                       # 启用 Material 主题的常用功能
     - navigation.tabs             # 顶部标签页导航
     - navigation.instant          # 启用即时加载 (加快页面切换速度)
