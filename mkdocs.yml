@@ -1,0 +1,101 @@
+# ====================================================================
+# 1. 核心项目信息配置
+# ====================================================================
+
+site_name: MengQ's Home # 网站在浏览器标签和页脚显示的名称
+#site_url: https://yourusername.github.io/your-repo/ # 你的 Pages 部署 URL
+site_description: :)
+#repo_url: https://github.com/yourusername/your-repo/ # 你的 GitHub 仓库地址
+#repo_name: 仓库名称 # 显示在右上角的链接文字
+
+# 默认文档源目录，通常不需要修改
+#docs_dir: docs 
+
+# 默认构建产物输出目录，通常不需要修改
+#site_dir: site
+
+# ====================================================================
+# 2. 导航结构 (Navigation) 配置
+#    - 这是手动指定导航结构的关键部分
+#    - 确保 'docs/' 目录下的文件路径正确
+# ====================================================================
+
+nav:
+  - 🏠 首页: index.md            # 你的项目介绍页
+  - 博客与随笔: blog.md          # 之前提到的 blog 页面
+  - 菜谱大全:
+    # 使用 'index.md' 来作为整个 'cook' 部分的介绍页 (推荐的做法)
+    - 介绍: cook/index.md       
+    # 子页面列表
+    - 大虾炒白菜: cook/大虾炒白菜.md 
+    #- 🌶️ 麻婆豆腐: cook/ma-po-tofu.md
+  #- 关于项目: about.md
+
+# ====================================================================
+# 3. 主题设置 (Theme) 配置：使用 Material for MkDocs
+# ====================================================================
+
+theme:
+  name: material                  # 使用 Material for MkDocs 主题
+  language: zh                    # 启用主题的中文本地化（搜索提示、页脚等）
+  custom_dir: overrides           # 允许你自定义主题文件（高级功能）
+  features:                       # 启用 Material 主题的常用功能
+    - navigation.tabs             # 顶部标签页导航
+    - navigation.instant          # 启用即时加载 (加快页面切换速度)
+    - navigation.sections         # 侧边栏可以折叠/展开
+    - toc.follow                  # 目录随页面滚动而高亮当前标题
+    - search.suggest              # 搜索建议
+    - search.highlight            # 搜索结果高亮
+    - content.code.copy           # 代码块添加复制按钮
+    - content.tabs.link           # 允许标签页链接
+  palette:                        # 颜色配置
+    # 浅色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo             # 主色调
+      accent: red                 # 强调色
+      toggle:
+        icon: material/weather-sunny # 图标
+        name: 切换到深色模式
+    # 深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: 切换到浅色模式
+
+# ====================================================================
+# 4. 扩展和插件 (Extensions and Plugins)
+# ====================================================================
+
+markdown_extensions:
+  - attr_list                  # 允许使用 {.class} 给元素添加属性
+  - admonition                 # 启用 Material 主题的 Admonition 提示框 (如 "!!! note")
+  - pymdownx.details           # 启用 Details 折叠功能
+  - pymdownx.highlight:        # 启用代码高亮
+      anchor_linenums: true    # 启用行号锚点
+      line_spans: __span       # 行号样式
+      pygments_lang_class: true
+  - pymdownx.inlinehilite      # 启用行内代码高亮
+  - pymdownx.snippets          # 启用文件片段引用
+  - pymdownx.superfences       # 启用嵌套的代码块和 Admonition
+  - pymdownx.tabbed:           # 启用内容标签页
+      alternate_style: true
+  - pymdownx.tasklist:         # 启用任务列表（- [ ] 和 - [x]）
+      custom_checkbox: true
+  - toc:                       # 目录配置
+      permalink: true          # 启用标题链接
+
+plugins:
+  - search:                   # 默认搜索插件
+      # ⚠️ 针对中文的配置：需要安装额外的 Python 库才能启用中文分词
+      # 如果需要中文搜索，请确保你已经安装了 mkdocs-material[i18n] 或 mkdocs-with-pdf-search 等。
+      # 简单启用 jieba 分词（如果安装了 mkdocs-material[i18n]）：
+      lang:
+        - en
+        - zh # 告诉搜索插件支持中文
+  
+  # 如果想自动生成侧边栏，启用此插件（但需手动配置 nav 中指定顶层）
+  # - section-index
