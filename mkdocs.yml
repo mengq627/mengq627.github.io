@@ -99,3 +99,9 @@ plugins:
   
   # 如果想自动生成侧边栏，启用此插件（但需手动配置 nav 中指定顶层）
   # - section-index
+extra:
+  generator: true
+
+extra_css:
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
