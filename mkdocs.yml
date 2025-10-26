@@ -23,7 +23,8 @@ site_description: :)
 nav:
   - 首页: index.md            # 你的项目介绍页
   - 博客与随笔: blog.md          # 之前提到的 blog 页面
-  - cook/README.md: 
+  - 做饭: 
+    - 介绍: cook/README.md
     - 大虾炒白菜: cook/大虾炒白菜.md
     - 葱烧豆腐: cook/葱烧豆腐.md
     - 炝锅面: cook/炝锅面.md
