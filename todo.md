@@ -1,7 +1,0 @@
-- [ ] 记录一些好用的开源工具
-- [ ] 写一篇关于八段锦、八部金刚功之类养生恢复身体的博客。
-- [ ] 写一篇恢复身体平衡，纠正体态的博客。
-- [ ] 记录一下Windows上Terminal的配置
-  - powershell
-  - Terminal
-- [ ] godot导出为web游戏并通过Cloudflare部署。
