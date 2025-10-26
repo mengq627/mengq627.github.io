@@ -42,9 +42,7 @@ jobs:
       - name: 安装 MkDocs 及其依赖
         run: |
           python -m pip install --upgrade pip
-          # 安装 mkdocs, mkdocs-material 等依赖
-          pip install mkdocs mkdocs-material # 根据你的 mkdocs.yml 中所需的插件进行修改
-          # 如果你有 requirements.txt 文件，使用：pip install -r requirements.txt
+          pip install -r requirements.txt
       - name: 构建 MkDocs 静态站点
         run: mkdocs build # 编译产物将默认生成在 site/ 目录下
 
