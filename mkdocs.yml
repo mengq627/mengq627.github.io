@@ -96,13 +96,13 @@ plugins:
         - en
         - zh # 告诉搜索插件支持中文
   - git-revision-date-localized:
-    type: timeago
-    enable_git_follow: false
-    #enable_creation_date: false
-    #custom_format: "%d. %B %Y"
-    #enabled: true
-    #exclude:
-    #  - index.md
+      type: timeago
+      enable_git_follow: false
+      enable_creation_date: false
+      #custom_format: "%d. %B %Y"
+      #enabled: true
+      #exclude:
+      #  - index.md
   # 如果想自动生成侧边栏，启用此插件（但需手动配置 nav 中指定顶层）
   # - section-index
 extra:
