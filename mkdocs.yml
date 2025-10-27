@@ -103,7 +103,7 @@ plugins:
       date_format: '%Y-%m-%d'  # Date format strings (e.g., %Y-%m-%d, %b %d, %Y)
       time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
       show_author: false        # Author display mode: true(avatar) text(text) false(hidden)
-      recently-updated: false   # Whether to turn on recently updated data, default: false
+      # recently-updated: false   # Whether to turn on recently updated data, default: false
   # - git-revision-date-localized:
   #     type: timeago
   #     enable_git_follow: false
