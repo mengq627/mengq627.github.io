@@ -94,24 +94,24 @@ plugins:
       lang:
         - en
         - zh # 告诉搜索插件支持中文
-  - document-dates:
-      position: top            # Display position: top(after title) bottom(end of document)
-      type: timeago              # Date type: date datetime timeago, default: date
-      exclude:                 # List of excluded files
-        - temp.md                  # Example: exclude the specified file
-      #   - blog/*                   # Example: exclude all files in blog folder, including subfolders
-      date_format: '%Y-%m-%d'  # Date format strings (e.g., %Y-%m-%d, %b %d, %Y)
-      time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
-      show_author: false        # Author display mode: true(avatar) text(text) false(hidden)
-      # recently-updated: false   # Whether to turn on recently updated data, default: false
-  # - git-revision-date-localized:
-  #     type: timeago
-  #     enable_git_follow: false
-  #     enable_creation_date: false
-  #     #custom_format: "%d. %B %Y"
-  #     #enabled: true
-  #     #exclude:
-  #     #  - index.md
+  # - document-dates:
+  #     position: top            # Display position: top(after title) bottom(end of document)
+  #     type: timeago              # Date type: date datetime timeago, default: date
+  #     exclude:                 # List of excluded files
+  #       - temp.md                  # Example: exclude the specified file
+  #     #   - blog/*                   # Example: exclude all files in blog folder, including subfolders
+  #     date_format: '%Y-%m-%d'  # Date format strings (e.g., %Y-%m-%d, %b %d, %Y)
+  #     time_format: '%H:%M:%S'  # Time format strings (valid only if type=datetime)
+  #     show_author: false        # Author display mode: true(avatar) text(text) false(hidden)
+  #     # recently-updated: false   # Whether to turn on recently updated data, default: false
+  - git-revision-date-localized:
+      type: timeago
+      enable_git_follow: true
+      enable_creation_date: true
+      #custom_format: "%d. %B %Y"
+      #enabled: true
+      #exclude:
+      #  - index.md
   # 如果想自动生成侧边栏，启用此插件（但需手动配置 nav 中指定顶层）
   # - section-index
 extra:
