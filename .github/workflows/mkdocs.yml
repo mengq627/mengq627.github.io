@@ -47,6 +47,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install -e .  # 安装本地 extensions 包
       - name: 构建 MkDocs 静态站点
         run: mkdocs build # 编译产物将默认生成在 site/ 目录下
 
