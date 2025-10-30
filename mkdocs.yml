@@ -28,6 +28,8 @@ nav:
     - 大虾炒白菜: cook/大虾炒白菜.md
     - 葱烧豆腐: cook/葱烧豆腐.md
     - 炝锅面: cook/炝锅面.md
+  - 年度计划:
+    - 2025: milestone/2025.md        # 2025页面
 
 # ====================================================================
 # 3. 主题设置 (Theme) 配置：使用 Material for MkDocs
@@ -85,6 +87,7 @@ markdown_extensions:
       custom_checkbox: true
   - toc:                       # 目录配置
       permalink: true          # 启用标题链接
+  - extensions.milestone       # 自定义里程碑扩展
 
 plugins:
   - search:                   # 默认搜索插件
@@ -121,3 +124,4 @@ extra_css:
   - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
   - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
   - stylesheets/font.css
+  - stylesheets/milestone.css
